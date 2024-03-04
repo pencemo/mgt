@@ -222,6 +222,7 @@ body{
     grid-template-columns: 65% 35%;
     grid-template-areas: "one tow";
     gap: 20px;
+    overflow: hidden;
 }
 .landing-bg .act{
     /* display: flex; */
@@ -550,30 +551,33 @@ body{
     padding: 150px 0;
 }
 
-.text-area{
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    position: relative;
-    /* justify-content: center; */
-    overflow: hidden;
-}
-
 .text-1{
     position: absolute;
-    color: #bdbdbd6e;
 }
-.text-2{
-    color: #1b1b1b;
-    width: 0;
-    height: 40px;
-    overflow: hidden;
-    /* transition: all 1s; */
+.text-h1{
+    color: #bdbdbd3d;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 6vw, 5rem);
+}
+.text-h1-2{
+    color: var(--color-green);
     white-space: nowrap;
+    width: 0;
+    overflow: hidden;
 }
-
-
-
+.text-h2{
+    text-transform: uppercase;
+    margin: 0;
+    color: #bdbdbd3d;
+    font-weight: 800;
+    font-size: clamp(4rem, 11vw, 9rem);
+}
+.text-h2-2{
+    color: var(--color-yellow);
+    white-space: nowrap;
+    width: 0;
+    overflow: hidden;
+}
 
 
 /* footer */

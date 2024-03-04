@@ -136,15 +136,18 @@ var swiper = new Swiper(".mySwiper", {
 let tl = gsap.timeline({
   scrollTrigger:{
     trigger:".text-scroll",
-    start:"50% 50%",
-    end:"100% 50%",
+    start:"10% 50%",
+    end:"80% 50%",
     markers:true,
     scrub: 1,
   },
 });
-tl.to(".text-2",{
+tl.to(".text-h1-2",{
   width: "100%",
-})
+});
+tl.to(".text-h2-2",{
+  width: "100%",
+});
 
 
 
