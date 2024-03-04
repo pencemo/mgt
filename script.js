@@ -118,7 +118,14 @@ var swiper = new Swiper(".mySwiper", {
   
   
   
+  const lenis = new Lenis()
 
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+  
+  requestAnimationFrame(raf)
 
 
 
@@ -126,7 +133,18 @@ var swiper = new Swiper(".mySwiper", {
   
   
 
-
+let tl = gsap.timeline({
+  scrollTrigger:{
+    trigger:".text-scroll",
+    start:"50% 50%",
+    end:"100% 50%",
+    markers:true,
+    scrub: 1,
+  },
+});
+tl.to(".text-2",{
+  width: "100%",
+})
 
 
 
