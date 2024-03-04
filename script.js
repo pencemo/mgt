@@ -136,9 +136,9 @@ var swiper = new Swiper(".mySwiper", {
 let tl = gsap.timeline({
   scrollTrigger:{
     trigger:".text-scroll",
-    start:"20% 70%",
-    end:"100% 40%",
-    markers:true,
+    start:"50% 70%",
+    end:"50% 40%",
+    // markers:true,
     scrub: 2,
   },
 });
@@ -152,6 +152,22 @@ tl.to(".text-h2-2",{
 
 
 
+
+
+let pl = gsap.timeline({
+  scrollTrigger:{
+    trigger:".text-scroll",
+    start:"50% 50%",
+    end:"140% 50%",
+    // markers:true,
+    scrub: 2,
+  },
+});
+pl.to(".powder",{
+  y:700,
+  x:-700,
+  rotateZ: 0,
+});
 
 
 
