@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 *,a{
     font-family: "Raleway", sans-serif;
@@ -28,7 +28,15 @@
     --font-size-head: 1.25rem;
     --font-size-sec: 1.125rem;
 }
-
+::-moz-selection { /* Code for Firefox */
+    color: var(--color-green);
+    background: var(--color-green-dark);
+  }
+  
+  ::selection {
+    color: var(--color-green);
+    background: var(--color-green-dark);
+  }
 
 
 body{
@@ -548,36 +556,67 @@ body{
 
 
 .text-scroll{
-    padding: 150px 0;
+    padding: 150px 20px;
+}
+.text-area{
+    position: relative;
+    width: 100%;
+    background-color: #bb8a52;
 }
 
 .text-1{
     position: absolute;
 }
 .text-h1{
+    /* font-family: "Caveat", cursive; */
     color: #bdbdbd3d;
-    font-weight: 600;
-    font-size: clamp(1.5rem, 6vw, 5rem);
+    font-weight: 500;
+    font-size: clamp(1.7rem, 5vw, 4rem);
+    margin: 0;
 }
 .text-h1-2{
-    color: var(--color-green);
+    color: #000000;
     white-space: nowrap;
     width: 0;
     overflow: hidden;
 }
 .text-h2{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0;
     color: #bdbdbd3d;
-    font-weight: 800;
+    font-weight: 700;
     font-size: clamp(4rem, 11vw, 9rem);
 }
 .text-h2-2{
-    color: var(--color-yellow);
+    color: var(--color-green);
     white-space: nowrap;
     width: 0;
     overflow: hidden;
 }
+.dis{
+    margin-top: clamp(4rem, 11vw, 9rem);
+    padding-top: clamp(1.7rem, 5vw, 4rem);
+}
+
+.dis p{
+    margin-top: 20px;
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    max-width: clamp(5rem, 90vw, 80%);
+    font-weight: 500;
+    line-height: clamp(1.5rem, 4vw, 2rem);
+}
+.dis p:nth-child(2){
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* footer */
