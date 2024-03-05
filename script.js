@@ -6,6 +6,7 @@ var swiper = new Swiper(".mySwiper", {
       delay: 2500,
       disableOnInteraction: false,
     },
+    
   
     pagination: {
       el: ".swiper-pagination",
@@ -15,19 +16,19 @@ var swiper = new Swiper(".mySwiper", {
   
     breakpoints: {
       576: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       1200: {
-        slidesPerView: 5,
+        slidesPerView: 3,
       },
     },
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
+    navigation: {
+      nextEl: ".fa-arrow-right",
+      prevEl: ".fa-arrow-left",
+    },
   });
   
   // scroll
@@ -137,7 +138,7 @@ let tl = gsap.timeline({
   scrollTrigger:{
     trigger:".text-scroll",
     start:"50% 70%",
-    end:"50% 40%",
+    end:"50% 20%",
     // markers:true,
     scrub: 2,
   },
@@ -160,15 +161,62 @@ let pl = gsap.timeline({
     start:"50% 50%",
     end:"140% 50%",
     // markers:true,
-    scrub: 2,
+    scrub: 1,
   },
 });
 pl.to(".powder",{
-  y:700,
+  y:750,
   x:-700,
   rotateZ: 0,
+  scale: .8,
 });
 
 
+
+let mm = gsap.matchMedia();
+
+mm.add("(max-width: 1300px)",() =>{
+ 
+  
+  let pl = gsap.timeline({
+    scrollTrigger:{
+      trigger:".text-scroll",
+      start:"50% 50%",
+      end:"140% 50%",
+      // markers:true,
+      scrub: 1,
+    },
+  });
+  pl.to(".powder",{
+    y:680,
+    x:-500,
+    rotateZ: 0,
+    scale: .7,
+  });
+
+
+});
+
+mm.add("(max-width: 768px)",() =>{
+ 
+  
+  let pl = gsap.timeline({
+    scrollTrigger:{
+      trigger:".text-scroll",
+      start:"50% 50%",
+      end:"140% 50%",
+      // markers:true,
+      scrub: 1,
+    },
+  });
+  pl.to(".powder",{
+    y: 790,
+    x: 5,
+    rotateZ: 0,
+    scale: .5,
+  });
+
+
+})
 
 
