@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGT</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/logo-2.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+    <!-- icon -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    
+    <!-- https://swiperjs.com  slide animation cdn-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- https://github.com/michalsnik/aos  scroll animation cdn-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./style.css">
+        
+    <!-- demo fontawoisome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet"href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css" >
+    <!-- demo font -->
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <section class="nav-bar">
+        <nav class="container nav-container">
+            <div class="logo"><a href=""><img src="./assets/logo.png" alt=""></a></div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="./product.html">Products</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <i class="ri-close-large-fill close-btn"></i>
+            <div class="nav-btns">
+                <div class="order-btn"><a href="">Contact Now</a></div>
+                <div class="toggle-icon"><i class="ri-bar-chart-horizontal-line"></i></div>
+            </div>
+        </nav>
+    </section>
+
+
+
+<style>
+    :root{
+
+/* Color */
+--color-yellow: #ffba00;
+--color-yellow-dark: #bb8a52;
+--color-green: #6d9773;
+--color-green-dark: #0c3b2e;
+--color-white: #fff;
+--color-balck: #1E1E1E;
+
+/* Fonts  */
+--primary-font: "Rajdhani", sans-serif;
+
+/* Fonts  */
+--font-size-main: 2rem;
+--font-size-head: 1.25rem;
+--font-size-sec: 1.125rem;
+}
+
+    .text-area{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .powid-img{
+        background-color: antiquewhite;
+        width: 100%;
+        height: 100%;
+    }
+    .powid-img img{
+    width: 100%;
+    z-index: 10;
+    transform: rotate(-5deg) ;
+    /* scale: .8; */
+    /* background-color: #bb8a52; */
+}
+.text-1 h1{
+    font-size: clamp(4rem, 11vw, 9rem);
+    font-weight: 800;
+    color: var(--color-green);
+    margin: 0;
+}
+.text-1 img{
+    width: 90%;
+}
+.text-1 h2{
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 500;
+    color: var(--color-green-dark);
+    margin: 0;
+}
+.powid-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(60%);
+}
+@media (max-width: 768px){
+    .text-1 img{
+        margin-top: 50px;
+    }
+}
+</style>
+
+
+
+<section class="text-scroll container ">
+    <div class="text-area">
+        <div class="text-1">
+            <!-- <h1 >MGT</h1> -->
+            <img src="./assets/logo.png" alt="">
+            <h2 >Mshkak General Trading</h2>
+        </div>
+        <div class="disc">
+            <p>We grow through inspiration, inventions and innovation which keep us updated with the industry changing trends.
+                <span>Over the years MGT has relied on its core strengths to help consolidate and grow its business</span></p>
+
+                <!-- <div class=" order-btn" ><a href="./product.html" >Learn More</a></div> -->
+        </div>
+    </div>
+
+
+  <div class="powid-img"><img  src="https://img.freepik.com/free-photo/view-allergens-commonly-found-grains_23-2150170288.jpg?t=st=1709706354~exp=1709709954~hmac=44a30752aa6cec39d5b62d2ae32dc02344b4df9584b5973a95883eb57e8f6205&w=1380" alt=""> </div>
+
+</section>
+
+
+
+
+<section class="section-2">
+
+<div class="container">
+    <div class="about-wrap">
+        <div class="about-img">
+            <img src="./assets/Pulses.png" alt="">
+        </div>
+        <div class="about-text">
+            <h1>Abuot Us</h1>
+            <p>Mshkak General Trading (MGT) is one of the premier names in the Food and Consumer goods service industry, engaged in the distribution of the processed and frozen food products and other consumer goods in the region. Our main distribution channels include Super Markets, Grocery Stores and Retailers.
+                Our warehouses are well equipped to store dry and frozen foods with state of the art refrigeration facilities manned by experienced workforce.</p>
+            <div class=" order-btn" ><a href="./product.html" >Contact Us</a></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- *** iso **** -->
+<style>
+    .iso-wrap{
+        padding: 50px 0;
+    }
+    .iso-logo{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .iso-logo img{
+        width: 350px;
+    }
+    .iso-text h1{
+        font-size: 45px;
+        font-weight: 700;
+        color: var(--color-green);
+    }
+    .iso-text p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .iso-para{
+        margin-top: 30px;
+        text-align: center;
+    }
+    @media (max-width: 768px){
+        .iso-logo{
+            text-align: center;
+        }
+        .iso-logo img{
+        width: 300px;
+    }
+    }
+</style>
+
+<div class="iso-wrap container ">
+    <div class="iso-logo">
+        <img src="./assets/iso.png" alt="">
+        <div class="iso-text">
+            <h1>ISO & HACCP <br> Certification</h1>
+            <p>MGT is an ISO & HACCP certified company</p>
+        </div>
+    </div>
+    <p class="iso-para">ISO 22000:2018 is the international standard for food safety management systems. It outlines
+        standard requirements for organizations in the food chain to control food safety hazards and ensure
+        safe consumption. The standard integrates with other management systems for effectiveness and
+        efficiency, providing a framework for implementing a Food Safety Management System (FSMS). <br>
+        The HACCP - Food Safety Management System meets the requirement of the Codex Alimentarius
+        Commission (CAC)-established by the World Health Organization and the Food and Agriculture
+        Organization of the United Nations to bring together international food standard, guidelines and
+        codes of practice to ensure fair trade of MGT</p>
+</div>
+
+
+<!-- ********************* -->
+
+<div class="container">
+    <div class="for-icon-wrap">
+        <div class="icon-div">
+            <i class="fa-thin fa-handshake"></i>
+            <h4>Collaboration</h4>
+            <p>Collaboration with prominent local and international distributors.</p>
+        </div>
+        <div class="icon-div">
+            <i class="fa-thin fa-user-group-simple"></i>
+            <h4>Team</h4>
+            <p>Reliable, efficient sales team covering shopping malls, hypermarkets, stores etc.</p>
+        </div>
+        <div class="icon-div">
+            <i class="fa-thin fa-cart-flatbed-suitcase"></i>
+            <h4>Prompt Delivery</h4>
+            <p>Match supply and demand using our optimized inventory management systems.</p>
+        </div>
+        <div class="icon-div">
+            <i class="fa-thin fa-shield-check"></i>
+            <h4>Quality Control</h4>
+            <p>Committed to continous improvement and customer satisfaction.</p>
+        </div>
+    </div>
+</div>
+
+
+</section>
+
+  
+<!-- ********************** -->
+<style>
+    iframe{
+        width: 100%;
+        height: 300px;
+        margin: 50px 0;
+        border-radius: 20px;
+        box-shadow: 0px 0px 36px 12px rgba(0,0,0,0.1);
+        border:#000000 solid 1px ;
+    }
+</style>
+
+<div class="container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7269.620591275264!2d54.484876!3d24.3531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e419b8f06e09f%3A0xf1be53a106393093!2sMSHKAK%20GENERAL%20TRADING!5e0!3m2!1sen!2sae!4v1709711296373!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+
+
+
+<!-- footr ***** -->
+
+        <footer>
+            <div class="container">
+                <div class="row footer-set justify-content-center " >
+                    <div class="col-sm-6 col-md-6 col-lg-4  footer-set-box">
+                    <div>
+                        <img class="logo-footer" src="./assets/logo.png" alt="">
+                        <p class="logo-des">Mshkak General Trading (MGT) is
+                            one of the premier names in the Food and Consumer goods
+                            service industry, engaged in the distribution of the processed and
+                            frozen food products and other consumer goods in the region.</p>
+                        <div class="footer-icon">
+                            <a href="https://www.facebook.com/profile.php?id=100090192650725&mibextid=ZbWKwL"><div class="icon-round"><i class="fa-brands fa-facebook-f"></i></div> </a>
+                            <a href="https://www.instagram.com/mghazifurniture?igsh=NWNnZGZyNjZpd2Jl"><div class="icon-round"><i class="fa-brands fa-instagram"></i></div> </a>
+                            <a href="https://wa.me/+971543266421"><div class="icon-round"><i class="fa-brands fa-whatsapp"></i></div> </a>
+                            <a href="mailto:mghazitrading@gmail.com"><div class="icon-round"><i class="fa-solid fa-envelope"></i></div> </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-2 footer-set-box" >
+                    <h3 class="footer-head">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="./index.html">Go to Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="./product.html">Our Products</a></li>
+                        <li><a href="">Project</a></li>
+                        <li><a href="./contact.html">Contact Info</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-2 footer-set-box" >
+                        <h3 class="footer-head">Our Customers</h3>
+                        <ul class="footer-links">
+                            <li>Super Markets</li>
+                            <li>Restaurants</li>
+                            <li>Hotels & Cafeterias</li>
+                            <li>Canteens</li>
+                            <li>Individuals</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 footer-set-box">
+                        <h3 class="footer-head">Office</h3>
+                        <p class="logo-des footer-ads">Mshkak General Trading, Mussaffah Ind-40, Near Al Ghazal Transport, Abu Dhabi - UAE</p>
+                        <div class="footer-contact-dts"><a href="tel:+97125553364"><i class="fa-solid fa-circle-phone"></i>+971 2555 3364</a></div>
+                        <div class="footer-contact-dts"><a href="mailto:sales@mgt-uae.com"><i class="fa-sharp fa-solid fa-circle-envelope"></i>sales@mgt-uae.com</a></div>
+                        
+                    </div>
+            
+                </div>
+                
+                
+
+                <div class="raw bottom-line"></div>
+                <div class="raw Copyright-raw">
+                    <p>© All Copyright reserved By MGT, 2024</p>
+                    <p>Powered by <a href="https://neptunemark.com/">NeptuneMark</a></p>
+                </div>
+            </div>
+        </footer>
+
+
+<!-- scrip links -->
+
+    <!-- google tran  -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <!-- type animation cdn -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- slide animation cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!-- jquery.com -->
+
+    <!-- scroll animation cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+
+
+     <!-- gsap scroll animation  -->
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+     <!-- ***************************** -->
+
+
+     
+     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     
+
+
+     <!-- lenis  -->
+     <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script> 
+     <script src="./script.js"></script>
+ 
+
+
+
+
+
+
+    </body>
+</html>
