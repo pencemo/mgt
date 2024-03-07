@@ -254,7 +254,7 @@ body{
     width: 450px;
     left: -80px;
     top: 50%;
-    transform:  rotate(90deg) translateY(-50%) ;
+    transform:   translateY(-50%) ;
     opacity: 0;
     visibility: hidden;
     transition: all 2s;
@@ -267,7 +267,7 @@ body{
     width: 100%;
 }
 .act .image-side .img-box {
-    transform:  rotate(0) translateY(-50%) ;
+    transform:  translateY(-50%) ;
     opacity: 1;
     visibility: visible;
 }
@@ -363,7 +363,7 @@ body{
     color: var(--color-green);
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
     opacity: .7;
     transition: all .5s;
     /* font-family: var(--primary-font); */
@@ -472,7 +472,7 @@ body{
         width: 300px;
         left: 0;
         top: 60%;
-        transform:  rotate(40deg) translateY(-50%) ;
+        transform: translateY(-50%) ;
     }
     .contant{
         position: relative;
@@ -849,11 +849,17 @@ body{
     place-content: center;
     cursor: pointer;
     transition: all .3s;
+    opacity: 0;
+}
+.swiper:hover .swip-btn i{
+    opacity: 1;
 }
 .swip-btn i:hover{
     color: var(--color-green);
     background-color: var(--color-green-dark);
+    opacity: 1;
 }
+
 
 @media (max-width: 768px){
 
@@ -862,9 +868,9 @@ body{
         grid-template-columns: 100%;
         grid-template-areas: 'product1' 'product2';
     }
-    .swip-btn{
+    /* .swip-btn{
         display: none;
-    }
+    } */
 }
 
 /* ******************** */
