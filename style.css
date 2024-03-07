@@ -39,6 +39,10 @@
     background: var(--color-green-dark);
   }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 body{
     box-sizing: border-box;
